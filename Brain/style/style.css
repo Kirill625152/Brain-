@@ -1,0 +1,286 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    min-width: 320px;
+    word-break: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* global */
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* header -------------------------------------------------------- */
+
+/*.header {
+    border-bottom: 1px solid #C4C4C4;
+    width: 1600px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.logo-link {
+    margin-right: 50px;
+}
+
+.header-list {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+
+.header-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #3172B9;
+    border-radius: 3px;
+}
+
+.articles-section {
+    padding-top: 90px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.articles-title {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.articles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    display: flex;
+    width: 570px;
+    height: 180px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+}
+
+.card-content-wrapper {
+    padding: 30px 160px 30px 30px;
+}
+
+.card-time {
+    font-size: 10px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #1C1C1C;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #787878;
+} */
+ 
+
+:root {
+--white-color : #fff ;
+--light-grey : #2A2F37 ;   
+--blue:  #1E3DAF;
+
+}
+
+.header{
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height:70px ;
+    border-bottom: 1px solid var(--light-grey) ;
+}
+
+.container {
+    width: 1170px;
+    min-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.search{
+    position: relative;
+    width:16px ;
+    height:20px ;
+    border: 2px solid var(--light-grey) ;
+    border-radius: 50%;
+}
+
+.search::after {
+    content: '';
+    bottom:-1px ;
+    left:10px ;
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    border: 20%;
+    background-color: var(--light-grey) ;
+    transform: rotate(37deg);
+} 
+
+.btn-style {
+    padding: 8px 16px;
+ color: var(--white-color);
+ background-color: var(--blue);
+}
+
+.header-link {
+    font-size: 16px;
+    font-style:normal ;
+    
+}
+
+.btn-login {
+    
+    height: 24px;
+    padding-left: 35px;
+    font-size: 14px;
+    color:var(--light-grey);
+  background: url('./img/chelovek.svg') no-repeat left center;  
+}
+
+.bg-color-white{
+    background-color: var(--white-color);
+
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width:80% ; 
+}
+
+.df-align-center-justify {
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+
+.hero{
+  background-color: var(--white-color);  
+}
+
+.hero-wrapper{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    grid-column:1 / span 7 ;
+}
+
+.grid {
+   display: grid; 
+   grid-template-columns: repeat(12,1fr);
+   gap: 40px;
+}
+.hero-title {
+   font-size: 48px ; 
+
+}
+
+.hero-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.rupor_st{
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.header { 
+    border-bottom: 2px solid #7a7a7a;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+
+
+ .hero-wrapper2{
+    display: flexbox;
+ }
+
+ .bg-img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url('../rupor.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 9/ span 13;
+    height: 310px;
+  }
